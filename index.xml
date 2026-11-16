@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="AAF Station" commit="2ecec175c5ff4f77394ceb1710d3102cdd450f16">
+  <category name="AAF">
+    <reapack name="AAF Station - Import AAF.py" type="script" desc="AAF Station: AAF import and export">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Import and export AAF audio edits with track selection and a timeline preview. Requires REAPER with Python ReaScript enabled and a Python 3.9+ installation with Tkinter.\par}
+}
+]]></description>
+      </metadata>
+      <version name="0.2.2" author="AAF Station" time="2026-11-16T07:26:21Z">
+        <changelog><![CDATA[First ReaPack package for AAF Station.]]></changelog>
+        <source main="main">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/AAF%20Station%20-%20Import%20AAF.py</source>
+        <source main="main" file="AAF Station - Export AAF.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/AAF%20Station%20-%20Export%20AAF.py</source>
+        <source file="aaf_core.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_core.py</source>
+        <source file="aaf_export.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_export.py</source>
+        <source file="aaf_export_ui.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_export_ui.py</source>
+        <source file="aaf_runtime.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_runtime.py</source>
+        <source file="aaf_theme.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_theme.py</source>
+        <source file="aaf_ui.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/aaf_ui.py</source>
+        <source file="configure_python.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/configure_python.py</source>
+        <source file="pcm_audio.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/pcm_audio.py</source>
+        <source file="reaper_apply.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/reaper_apply.py</source>
+        <source file="reaper_snapshot.py">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/reaper_snapshot.py</source>
+        <source file="config.example.json">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/config.example.json</source>
+        <source file="THIRD_PARTY_LICENSE.txt">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/THIRD_PARTY_LICENSE.txt</source>
+        <source file="vendor/pyaaf2-1.7.1-py2.py3-none-any.whl">https://raw.githubusercontent.com/gapalil001/aaf-station/2ecec175c5ff4f77394ceb1710d3102cdd450f16/AAF/vendor/pyaaf2-1.7.1-py2.py3-none-any.whl</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 AAF Station for REAPER\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Import and export AAF audio edits in REAPER. Both actions let you choose tracks and preview the clip layout. Import resolves left and right source channels separately. Export supports a time selection, a named region, or the whole project.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Install with ReaPack\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab In REAPER, open {\b Extensions \u8594? ReaPack \u8594? Import repositories} and paste this URL:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 https://raw.githubusercontent.com/gapalil001/aaf-station/main/index.xml\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab Open {\b Extensions \u8594? ReaPack \u8594? Browse packages}, search for {\b AAF Station}, mark it for installation, and click {\b Apply}.\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab In {\b Preferences \u8594? Plug-ins \u8594? ReaScript}, enable Python. Use Python 3.9 or newer with Tkinter. On macOS, the REAPER and Python builds must have a compatible architecture.\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 4.\tx360\tab In the Action List, run {\b AAF Station - Import AAF.py} or {\b AAF Station - Export AAF.py}.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The package includes {\f1 pyaaf2}. If REAPER's Python loads but the window cannot find a Python with Tkinter, use {\f1 config.example.json} beside the installed scripts as a template for {\f1 config.json}.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Import and export\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Import} supports linked and embedded PCM, track selection, and manual A1/A2 pairing when the AAF supplies separate mono tracks. Preview opens while the file is being analyzed. Import creates one undo step.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Export} writes linked WAV or embedded PCM. The preview shows changes from trimming to the selected range and additional tracks for overlapping clips. Linear fades can be rendered into the audio or kept as metadata for compatible readers.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Verified on REAPER 7.85 for macOS. The package transfers audio edits, not a full mix with plug-ins or automation. Direct import of exported AAF into Pro Tools has not been verified.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Maintain the index\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Update {\f1 @version} in the import action for a new release. Commit the source changes, then run {\f1 reapack-index --strict} from the repository root and push the source and index commits. The index pins each version to its source commit.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Run the Python tests with {\f1 python3 -m unittest discover -s AAF/tests -q}. See {\field{\*\fldinst{HYPERLINK "AAF/THIRD_PARTY_LICENSE.txt"}}{\fldrslt{\ul
+third-party notices
+}}}
+ for the bundled dependency.\par}
+}
+]]></description>
+  </metadata>
+</index>
